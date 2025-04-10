@@ -1204,7 +1204,7 @@ cssstyle@^4.1.0:
     "@asamuzakjp/css-color" "^3.1.1"
     rrweb-cssom "^0.8.0"
 
-csstype@^3.1.2:
+csstype@^3.1.2, csstype@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmmirror.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
@@ -1824,6 +1824,13 @@ inferno-create-element@^8.2.3:
   dependencies:
     inferno "8.2.3"
 
+inferno-create-element@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/inferno-create-element/-/inferno-create-element-9.0.3.tgz#6602bfa76df052e63b6637cc74585ba953535d74"
+  integrity sha512-NIUTvcGaR7d1el1uraUrDBUJ2/de6T2wsjmaFAbZfjspMx6y5336mMRknAJsi/ZYgjaaxyCDJ3KImUdwG2Nmsg==
+  dependencies:
+    inferno "9.0.3"
+
 inferno-server@^8.2.3:
   version "8.2.3"
   resolved "https://registry.npmmirror.com/inferno-server/-/inferno-server-8.2.3.tgz#3f3cfc73bb90b7ecb66e2203c7bf95af84696dd5"
@@ -1836,6 +1843,11 @@ inferno-vnode-flags@8.2.3:
   resolved "https://registry.npmmirror.com/inferno-vnode-flags/-/inferno-vnode-flags-8.2.3.tgz#1af330303efa2c1c8a028287e158974194f5cf4f"
   integrity sha512-dfC0MIwFv9PCbZCUsuk9ISejFS3fKJODC0rZ/LjxxzE+OrCk+PMwPLsUnGU6O9/jbBnPACVz1BkACDf5LWgU5Q==
 
+inferno-vnode-flags@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-9.0.3.tgz#336feb0582e9563a9923201bc882402611ebca0c"
+  integrity sha512-YCvln+7fcDNDKmcv6teXmcIslzYf8wqkPbg27cvtxKoSAN1wq9JyotJpsmpoqnbqLPzYe900Ir//M5xrOxsTFw==
+
 inferno@8.2.3, inferno@^8.2.3:
   version "8.2.3"
   resolved "https://registry.npmmirror.com/inferno/-/inferno-8.2.3.tgz#150cadc898c206c8d05c14e84aa3d4e40d13f819"
@@ -1843,6 +1855,15 @@ inferno@8.2.3, inferno@^8.2.3:
   dependencies:
     csstype "^3.1.2"
     inferno-vnode-flags "8.2.3"
+    opencollective-postinstall "^2.0.3"
+
+inferno@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-9.0.3.tgz#c3bd96ac75e3af290dc44cc2661b513d9bdf40d4"
+  integrity sha512-qW48Uan8UGtVTxKt04IJB2QkYnNo/Zqh/myxH5wlfZM8QNexHzgIOVnCvzAdFerXpIDrIDUiHgrOZR9ONMIHgg==
+  dependencies:
+    csstype "^3.1.3"
+    inferno-vnode-flags "9.0.3"
     opencollective-postinstall "^2.0.3"
 
 inflight@^1.0.4:
