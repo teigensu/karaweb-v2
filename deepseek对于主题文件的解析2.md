@@ -1,0 +1,45 @@
+
+- **`include/`** - 存放可复用的React组件和工具函数
+  - **`migration/`** - 主题版本迁移兼容逻辑
+  - **`schema/`** - 配置参数的类型定义和校验规则
+  - **`style/`** - 样式相关的工具函数
+  - **`util/`** - 通用工具函数
+  - **`config.js`** - 主题默认配置合并逻辑
+  - **`dependency.js`** - 管理前端资源依赖（CSS/JS）
+  - **`register.js`** - 组件注册入口
+- **`languages/`** - 控制导航菜单、按钮文字等界面元素的多语言显示
+- **`layout/`**  - 布局模板
+  - **`comment/`** - 评论系统模板（Disqus/Valine等）
+  - **`common/`** - 通用布局组件：
+    - `head.jsx` - `<head>` 元信息
+    - `navbar.jsx` - 顶部导航栏
+    - `footer.jsx` - 页脚
+  - **`donate/`** - 打赏按钮模板
+  - **`misc/`** - 杂项组件（如404页面）
+  - **`plugin/`** - 第三方插件容器
+  - **`search/`** - 搜索功能模板
+  - **`share/`** - 社交分享按钮
+  - **`widget/`** - 侧边栏小工具：
+    - `profile.jsx` - 作者信息卡
+    - `categories.jsx` - 分类云
+  - **根目录JSX文件**：
+    - `layout.jsx` - 全局布局骨架
+    - `index.jsx` - 首页模板
+    - `post.jsx` - 文章页模板
+    - `archive.jsx` - 归档页
+    - `tags.jsx`/`tag.jsx` - 标签列表/单标签页
+    - `categories.jsx`/`category.jsx` - 分类列表/单分类页
+- **`scripts/`** - 主题脚本
+  - Hexo生成器和过滤器逻辑
+  - **`index.js`** - 脚本入口，注册自定义生成器
+- **`source/`** - 静态资源
+  - **`css/`** - Stylus样式文件：
+    - `style.styl` - 主样式表
+    - `_variables.styl` - 颜色/字体变量
+  - **`img/`** - 主题内置图片素材
+  - **`js/`** - 自定义JavaScript逻辑
+- **`.eslintignore`** - ESLint检查排除列表
+- **`.eslintrc.json`** - JavaScript代码规范配置
+- **`LICENSE`** - MIT许可证文本
+- **`package.json`** - 主题依赖和npm脚本
+- **`README.md`** - 主题说明文档
