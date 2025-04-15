@@ -112,9 +112,6 @@ navbar:
         About: /about
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
 # Page footer configurations
 footer:
     # Copyright text
@@ -166,8 +163,18 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: giscus
-    # Disqus shortname
-    shortname: ''
+    repo: teigensu/karaweb-v2
+    repoId: R_kgDOOXEQzw
+    category: Announcements
+    categoryId: DIC_kwDOOXEQz84Co9oB
+    mapping: pathname
+    strict: false
+    reactionsEnabled: true
+    emitMetadata: false
+    inputPosition: top
+    theme: preferred_color_scheme
+    lang: zh-CN
+    lazy: true
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -201,11 +208,10 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: 张 晓山
+        author: 卡拉卡拉一号机
         # Author title
-        author_title: 卡拉卡拉一号机
-        # Author's current location
-        location: 半人马座
+        author_title: 张晓山的个人站点
+        author_subtitle: Personal Site of Akiyama
         # URL or path to the avatar image
         avatar: img/avatar.jpg
         # Whether show the rounded avatar image
@@ -216,18 +222,21 @@ widgets:
         follow_link: https://x.com/kara_8964st
         # Links to be shown on the bottom of the profile widget
         social_links:
-            Github:
-                icon: fab fa-github
-                url: https://github.com/teigensu
             Instagram:
                 icon: fab fa-instagram
                 url: https://instagram.com/teigensu
-            Weibo:
-                icon: fab fa-weibo
-                url: https://weibo.com/u/6451536587
             Twitter:
                 icon: fab fa-twitter
                 url: https://x.com/kara_8964st
+            Github:
+                icon: fab fa-github
+                url: https://github.com/teigensu
+            Weibo:
+                icon: fab fa-weibo
+                url: https://weibo.com/u/6451536587
+            Bilibili:
+                icon: fab fa-bilibili
+                url: https://space.bilibili.com/99941126
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -301,26 +310,9 @@ plugins:
     animejs: true
     # Show the "back to top" button
     back_to_top: true
-    # Baidu Analytics plugin settings
-    # https://tongji.baidu.com
-    baidu_analytics:
-        # Baidu Analytics tracking ID
-        tracking_id: 
-    # Bing Webmaster Tools plugin settings
-    # https://www.bing.com/toolbox/webmaster/
-    bing_webmaster:
-        # Bing Webmaster Tools tracking ID in the <meta> tag
-        tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
-    # CNZZ statistics
-    # https://www.umeng.com/web
-    cnzz:
-        # CNZZ tracker id
-        id: 
-        # CNZZ website id
-        web_id: 
+    busuanzi: true
     # Alerting users about the use of cookies
     # https://www.osano.com/cookieconsent/
     cookie_consent:
@@ -331,27 +323,17 @@ plugins:
         # Whether the popup should stay static regardless of the page scrolls
         static: false
         # Where on the screen the consent popup should display
-        position: bottom-left
+        position: bottom-right
         # URL to your site's cookie policy
         policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
-    # Google Analytics plugin settings
-    # https://analytics.google.com
-    google_analytics:
-        # Google Analytics tracking ID
-        tracking_id: 
-    # Hotjar user feedback plugin
-    # https://www.hotjar.com/
-    hotjar:
-        # Hotjar site id
-        site_id: 
     # Enable the KaTeX math typesetting support
     # https://katex.org/
-    katex: false
+    katex: true
     # Enable the MathJax math typesetting support
     # https://www.mathjax.org/
-    mathjax: false
+    mathjax: true
     # Enable the Outdated Browser plugin
     # http://outdatedbrowser.com/
     outdated_browser: false
@@ -359,18 +341,6 @@ plugins:
     pjax: true
     # Show a progress bar at top of the page on page loading
     progressbar: true
-    # Statcounter statistics
-    # https://statcounter.com/
-    statcounter:
-        # Statcounter project id
-        project: 
-        # Statcounter project security code
-        security: 
-    # Twitter conversion tracking plugin settings
-    # https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
-    twitter_conversion_tracking:
-        # Twitter Pixel ID
-        pixel_id: 
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:

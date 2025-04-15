@@ -26,6 +26,35 @@
             background: $light-grey
             color: $white-invert
 
+    .author-title-container
+        position: relative
+        height: 1.5rem  // 保持高度固定防止布局跳动
+        
+        .author-title
+            position: absolute
+            left: 0
+            right: 0
+            margin: 0 auto
+            transition: all 0.3s ease  // 平滑过渡效果
+            white-space: nowrap  // 防止文字换行
+            
+            &.normal
+                opacity: 1
+                transform: translateY(0)
+                
+            &.hover
+                opacity: 0
+                transform: translateY(8px)  // 初始位置下移
+                
+        &:hover
+            .normal
+                opacity: 0
+                transform: translateY(-8px)  // 上移并淡出
+                
+            .hover
+                opacity: 1
+                transform: translateY(0)  // 回到正常位置并淡入
+
 .level.is-multiline
     flex-wrap: wrap
 

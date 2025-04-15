@@ -23,7 +23,7 @@ class Profile extends Component {
             avatarRounded,
             author,
             authorTitle,
-            location,
+            authorSubtitle,
             counter,
             followLink,
             followTitle,
@@ -37,12 +37,12 @@ class Profile extends Component {
                             <figure class="image is-128x128 mx-auto mb-2">
                                 <img class={'avatar' + (avatarRounded ? ' is-rounded' : '')} src={avatar} alt={author} />
                             </figure>
-                            {author ? <p class="title is-size-4 is-block" style={{'line-height': 'inherit'}}>{author}</p> : null}
-                            {authorTitle ? <p class="is-size-6 is-block">{authorTitle}</p> : null}
-                            {location ? <p class="is-size-6 is-flex justify-content-center">
-                                <i class="fas fa-map-marker-alt mr-1"></i>
-                                <span>{location}</span>
-                            </p> : null}
+                            {author ? <p class="title is-size-4 is-block mb-1" style={{'line-height': 'inherit'}}>{author}</p> : null}
+                            {/* 修改后的标题容器 - 添加 hover 效果 */}
+                            <div class="author-title-container">
+                                {authorTitle && <p class="author-title normal is-size-6 is-block">{authorTitle}</p>}
+                                {authorSubtitle && <p class="author-title hover is-size-6 is-block">{authorSubtitle}</p>}
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -89,7 +89,7 @@ Profile.Cacheable = cacheComponent(Profile, 'widget.profile', props => {
         avatar_rounded = false,
         author = props.config.author,
         author_title,
-        location,
+        author_subtitle,
         follow_link,
         social_links
     } = widget;
@@ -129,7 +129,7 @@ Profile.Cacheable = cacheComponent(Profile, 'widget.profile', props => {
         avatarRounded: avatar_rounded,
         author,
         authorTitle: author_title,
-        location,
+        authorSubtitle: author_subtitle,
         counter: {
             post: {
                 count: postCount,

@@ -2,7 +2,7 @@
 	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
   <defs>
     <linearGradient id="st" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F3EBD5" />
+      <stop offset="0%" stop-color="#4bcadd" />
       <stop offset="100%" stop-color="#4bcadd" />
     </linearGradient>
   </defs>
