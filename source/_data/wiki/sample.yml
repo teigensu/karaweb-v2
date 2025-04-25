@@ -1,8 +1,8 @@
 name: sample
 title: 示例文件
 subtitle: shiliwenjian
-icon: 
-cover: 
+icon: https://raw.githubusercontent.com/teigensu/teigensu.github.io/refs/heads/main/medicalwikipicture/comprohensive-diagnostic-1/medical-history-doctor-svgrepo-com.svg
+cover: https://raw.githubusercontent.com/teigensu/teigensu.github.io/refs/heads/main/medicalwikipicture/comprohensive-diagnostic-1/medical-history-doctor-svgrepo-com.svg
 description: 这是一个示例文件。
 leftbar: 
   - search
@@ -14,5 +14,5 @@ comments:
     ···
 base_dir: /wiki/sample/
 tree:
-  - 
-  - 
+  - sample
+  - doc1
