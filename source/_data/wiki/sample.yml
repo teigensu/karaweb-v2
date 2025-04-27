@@ -1,0 +1,18 @@
+name: sample
+title: 示例文件
+subtitle: shiliwenjian
+icon: https://raw.githubusercontent.com/teigensu/teigensu.github.io/refs/heads/main/medicalwikipicture/comprohensive-diagnostic-1/medical-history-doctor-svgrepo-com.svg
+cover: https://raw.githubusercontent.com/teigensu/teigensu.github.io/refs/heads/main/medicalwikipicture/comprohensive-diagnostic-1/medical-history-doctor-svgrepo-com.svg
+description: 这是一个示例文件。
+leftbar: 
+  - search
+  - tree
+  - recent_posts
+comments:
+  service: giscus
+  giscus:
+    ···
+base_dir: /wiki/sample/
+tree:
+  - sample
+  - doc1
